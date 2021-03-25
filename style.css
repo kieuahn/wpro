@@ -3,10 +3,97 @@
  padding: 0;
  box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+  }
+  @font-face {
+    font-family: sfmonoreg;
+    src: url(SFMonoRegular.otf);
+  }  
 nav {
     display:flex;
+    
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
+    flex-direction: row;
     min-height: 8vh;
+    
+
     font-family: 'Inter', sans-serif;
+    background-color: #101010;
+    padding: 0;
+    color: #ccc;
+    
+}
+
+.logo {
+    color: #fff;
+    text-transform: none;
+    letter-spacing: 3px;
+    font-size: 20px ;
+    
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    line-height: 20px;
+    width: 30%;
+}
+ul li {
+    list-style: none;
+    
+}
+ul li a { 
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 10px;
+    width: 40%;
+
+}
+ul li a:hover {background-color: #c3323a;
+}
+
+
+.button div {
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    margin: 5px;}
+
+.button div:hover {    
+    background: #ccc;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0px, 0px); 
+    
+
+}
+footer {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: sfmonoreg, monospace;
+}
+@media screen and (max-width:1024px) {
+    ul {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+   .logo { font-size: 18px;
+}
+    ul { font-size: 13px;
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    }
+
+    .button div{ 
+    width: 18px;
+    height: 2px;
+    margin: 5px;
+     }
 }
