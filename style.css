@@ -1,146 +1,187 @@
 *{
- margin: 0;
- padding: 0;
- box-sizing: border-box;
-}
-html {
-    scroll-behavior: smooth;
-  }
-
-@font-face {
-    font-family: sfmonoreg;
-    src: url(SFMonoRegular.otf);
-    font-family: verilyserifmono;
-    src: url(VerilySerifMono.otf);
-}  
-nav {
-    display:flex;
-    
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    min-height: 8vh;
-    
-    font-family: 'Inter', sans-serif;
-    background-color: #101010;
+    margin: 0;
     padding: 0;
-    color: #ccc;
-}
-.logo {
-    color: #fff;
-    text-transform: none;
-    letter-spacing: 3px;
-    font-size: 20px ;
-    
-}
-ul { 
-    display: flex;
-    
-    justify-content: space-around;
-    align-items: center;
-
-}
-ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 10px;
-
-}
-ul li a {
-    text-decoration: none;
-    font-family: verilyserifmono,Arial, Helvetica, sans-serif, monospace,sans-serif;
-    
-    font-size: 15px;
-    letter-spacing: 1px;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-
-ul li a:hover {color: #ccc;
-}  
-
-.sidebar {
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    line-height: 20px;
-    width: 30%;
-    
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color: black;
-    width: 50px;
-    transform: translateX (100%);
-    transition: transform 0.5s ease-in;
-    width: 34.375rem;
-
+    box-sizing: border-box;
+    }
+    html {
+        scroll-behavior: smooth;
     }
 
-.sidebar li {
-    list-style: none;
-    
-}
-.sidebar li a { 
-        color: #fff;
-        font-size: .8125rem;
-        font-weight: 600;
-        line-height: 1.6;
-        letter-spacing: .01em;
+    @font-face {
+        font-family: sfmonoreg;
+        src: url(SFMonoRegular.otf);
+        font-family: verilyserifmono;
+        src: url(VerilySerifMono.otf);
+    }  
+    nav {
+        display:flex;
+        
+        margin: auto;
+        align-items: center;
+        flex-direction: row;
+        min-height: 10vh;
+        justify-content: space-around;
+        font-family: 'Inter', sans-serif;
+        
+        background-color: none;
+        padding: 0;
+        
+    }
+
+    .logo {
+        color: black;
+        letter-spacing: 3px;
+        font-size: 25px ;
+        display: flex;
+        flex:1;
+        margin: 20px;
+    }
+    ul { 
+        display: flex;
+        align-items: center;
+        flex: 1;
+
+    }
+    ul li {
+        list-style: none;
+        display: flex;
+        margin: 0 10px 0 10px;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    ul li a {
+        text-decoration: none;
+        font-family: verilyserifmono,Arial, Helvetica, sans-serif, monospace,sans-serif;
+        
+        font-size: 12px;
+        letter-spacing: 1px;
+        color: black;
         text-transform: uppercase;
     }
-    
-.button {
-    cursor: pointer;
-    
-}
-.button div {
-    background-color: white;
-    width: 25px;
-    height: 3px;
-    margin: 5px;
-}
-    
-.button div:hover {    
-    background: #ccc;
-    opacity: 1;
-    visibility: visible;
-    transform: translate(0px, 0px); 
-}
-
-footer {
-    font-size: 14px;
-    text-transform: uppercase;
-    font-family: sfmonoreg, monospace;
-}
-@media screen and (max-width:768px) {
-    .logo { font-size: 18px;
- }
-     ul { font-size: 13px;
-     position: absolute;
-     right: 0px;
-     height: 92vh;
-     top: 8vh;
-     }
- 
-     .button div{ 
-     width: 18px;
-     height: 2px;
-     margin: 5px;
-      }
-}
 
 
-@media screen and (max-width:1024px) {
-    ul {
-        width: 60%;
+    ul li a:hover {
+        color: #ccc;
+    } 
+
+
+    .background {
+        width: 100%;
+        height: 70%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(IMG_1469.png);
+        padding: 0 80px 80px -50px;
+    }   
+    .Introduction { 
+        margin-top: 19vh;
+        padding: 80px 0 205px 40px;
+        text-align: left;
     }
 
-}
-.sidebar-active{
- transform: translateX(0%);
-}
+    h5 {
+        font-size: 1.25rem;
+        font-family: "Inter", sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        
+    }
+    h1 {font-size: 5rem;
+        font-family: verilyserifmono,Arial, Helvetica, sans-serif, monospace,sans-serif;
+        margin: -4px;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        line-height: 20px;
+        
+        
+        position: absolute;
+        right: 0px;
+        height: 90vh;
+        top: 10vh;
+        background-color: black;
+        
+        transform: translateX (100%);
+        transition: transform 0.5s ease-in;
+        width: 10rem;
+
+        }
+
+
+    .sidebar li {
+        list-style: none;
+        
+        
+    }
+    .sidebar li a { 
+            background-color: black;
+            font-size: .8125rem;
+            font-weight: 600;
+            line-height: 1.6;
+            letter-spacing: .01em;
+            text-transform: uppercase;
+        }
+        
+    .button {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 0 30px;
+        flex:1;
+    }
+
+    .button div {
+        background-color:black;
+        width: 25px;
+        height: 4px;
+        margin: 3px 0px 3px 0px;
+    }
+        
+    .button div:hover {    
+        background: #ccc;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0px, 0px); 
+    }
+
+    footer {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-family: sfmonoreg, monospace;
+    }
+
+    @media screen and (max-width:768px) {
+        .logo { font-size: 18px;
+    }
+        ul { font-size: 13px;
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        }
+    
+        .button div{ 
+        width: 18px;
+        height: 2px;
+        margin: 5px;
+        }
+    }
+
+
+    @media screen and (max-width:1024px) {
+        ul {
+            width: 60%;
+        }
+
+    }
+    .sidebar-active{
+    transform: translateX(0%);
+    }
 
