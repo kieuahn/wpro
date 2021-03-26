@@ -15,18 +15,16 @@
     }  
     nav {
         display:flex;
-        
         margin: auto;
         align-items: center;
         flex-direction: row;
         min-height: 10vh;
         justify-content: space-around;
         font-family: 'Inter', sans-serif;
-        
         background-color: none;
         padding: 0;
-        
     }
+
 
     .logo {
         color: black;
@@ -73,7 +71,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-image: url(IMG_1469.png);
-        padding: 0 80px 80px -50px;
+        padding: 0 70px 80px -50px;
     }   
     .Introduction { 
         margin-top: 19vh;
@@ -93,8 +91,9 @@
         margin: -4px;
     }
 
-    .sidebar {
-        display: flex;
+    .sidebar 
+    {
+        display: none;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
@@ -106,12 +105,9 @@
         height: 90vh;
         top: 10vh;
         background-color: black;
-        
-        transform: translateX (100%);
-        transition: transform 0.5s ease-in;
         width: 10rem;
-
-        }
+        
+    } 
 
 
     .sidebar li {
@@ -120,36 +116,40 @@
         
     }
     .sidebar li a { 
-            background-color: black;
+            background-color: white;
             font-size: .8125rem;
             font-weight: 600;
             line-height: 1.6;
             letter-spacing: .01em;
             text-transform: uppercase;
+            color: white;
         }
-        
-    .button {
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        margin: 0 30px;
-        flex:1;
-    }
+    
+        .clickon li a :hover .submenu {
+            
+            display: block;
+            background-color: #ccc;
 
-    .button div {
-        background-color:black;
+        }
+    .submenu {
+        right: 0px;
+        height: 90vh;
+        top: 10vh;
+        background-color: black;
+    }
+    
+      
+    
+       
+
+    .clickon div {
+        cursor: pointer;
+        background-color: black;
         width: 25px;
         height: 4px;
         margin: 3px 0px 3px 0px;
     }
         
-    .button div:hover {    
-        background: #ccc;
-        opacity: 1;
-        visibility: visible;
-        transform: translate(0px, 0px); 
-    }
 
     footer {
         font-size: 14px;
