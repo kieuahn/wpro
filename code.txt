@@ -276,5 +276,30 @@
             width: 60%;
         }
 
-   
+   style
+   .button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .button div {
+        right: 0px;
+        height: 90vh;
+        top: 10vh;
+        background-color: black;}
+
+    .submenu {
+       
+    }
+    
+      
+
+    .clickon div {
+        cursor: pointer;
+        background-color: black;
+        width: 25px;
+        height: 4px;
+        margin: 3px 0px 3px 0px;
+    }
 
