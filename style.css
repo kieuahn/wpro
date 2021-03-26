@@ -6,11 +6,12 @@
 html {
     scroll-behavior: smooth;
   }
-  @font-face {
+
+@font-face {
     font-family: sfmonoreg;
     src: url(SFMonoRegular.otf);
     font-family: verilyserifmono;
-    src: VerilySerifMono.otf;
+    src: url(VerilySerifMono.otf);
 }  
 nav {
     display:flex;
@@ -20,7 +21,6 @@ nav {
     flex-direction: row;
     min-height: 8vh;
     
-
     font-family: 'Inter', sans-serif;
     background-color: #101010;
     padding: 0;
@@ -44,6 +44,7 @@ ul li {
     list-style: none;
     display: inline-block;
     margin: 0 10px;
+
 }
 ul li a {
     text-decoration: none;
@@ -74,8 +75,9 @@ ul li a:hover {color: #ccc;
     background-color: black;
     width: 50px;
     transform: translateX (100%);
-    transition: transform 0.5 ease in;
+    transition: transform 0.5s ease-in;
     width: 34.375rem;
+
     }
 
 .sidebar li {
@@ -91,25 +93,24 @@ ul li a:hover {color: #ccc;
         text-transform: uppercase;
     }
     
-
-}
 .button {
     cursor: pointer;
+    
 }
 .button div {
     background-color: white;
     width: 25px;
     height: 3px;
-    margin: 5px;}
+    margin: 5px;
+}
     
 .button div:hover {    
     background: #ccc;
     opacity: 1;
     visibility: visible;
     transform: translate(0px, 0px); 
-    
-
 }
+
 footer {
     font-size: 14px;
     text-transform: uppercase;
@@ -139,5 +140,7 @@ footer {
     }
 
 }
-
+.sidebar-active{
+ transform: translateX(0%);
+}
 
