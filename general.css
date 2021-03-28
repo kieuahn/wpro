@@ -35,7 +35,7 @@
     ul { 
         display: flex;
         align-items: center;
-        flex: 1;
+        flex: 2;
 
     }
     ul li {
@@ -62,8 +62,51 @@
     } 
 
 
- 
+   .button {
+    cursor: pointer;
+}
+
+
+.button div { 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+    width: 25px;
+    height: 4px;
+    margin: 3px 0px 3px 0px;
+}
+.button :hover {
+    background-color: #ccc;
+
+}
+
+.sidebar 
+{
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    line-height: 20px;
+    flex: 2;
+    margin: 0 100px 0 0 ;
+} 
+
+
+.sidebar li {
+    list-style: none;
     
+    
+}
+.sidebar li a { 
+        
+        font-size: .8125rem;
+        font-weight: 600;
+        line-height: 1.6;
+        letter-spacing: .01em;
+        text-transform: uppercase;
+        color: black;
+    }
         footer {
             font-size: 14px;
             text-transform: uppercase;
