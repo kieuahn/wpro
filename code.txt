@@ -303,3 +303,22 @@
         margin: 3px 0px 3px 0px;
     }
 
+
+
+ .sidebar 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        line-height: 20px;
+        
+        
+        position: absolute;
+        right: 0px;
+        height: 90vh;
+        top: 10vh;
+        background-color: black;
+        width: 10rem;
+        
+    } 

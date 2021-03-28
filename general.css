@@ -41,7 +41,7 @@
     ul li {
         list-style: none;
         display: flex;
-        margin: 0 10px 0 10px;
+        margin: 0 20px 0 20px;
         justify-content: space-around;
         align-items: center;
 
@@ -61,36 +61,8 @@
         color: #ccc;
     } 
 
-    .sidebar 
-    {
-        display: flex;
-        
-        justify-content: space-around;
-        align-items: center;
-        line-height: 20px;
-        
-        
-        position: absolute;
-       background-color: none;
-        flex: 2;
-        
-    } 
 
-
-    .sidebar li {
-        list-style: none;
-        
-        
-    }
-    .sidebar li a { 
-            background-color: white;
-            font-size: .8125rem;
-            font-weight: 600;
-            line-height: 1.6;
-            letter-spacing: .01em;
-            text-transform: uppercase;
-            color: white;
-        }
+ 
     
         footer {
             font-size: 14px;

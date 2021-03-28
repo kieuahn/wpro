@@ -31,22 +31,23 @@
         letter-spacing: 3px;
         font-size: 25px ;
         display: flex;
-        flex:1;
+        flex:0.5;
         margin: 20px;
     }
     ul { 
         display: flex;
         align-items: center;
-        flex: 1;
+        flex: 1.5;
+        
 
     }
     ul li {
         list-style: none;
         display: flex;
-        margin: 0 10px 0 10px;
+        margin: 0 20px 0 20px;
         justify-content: space-around;
         align-items: center;
-
+        cursor: pointer;
     }
     ul li a {
         text-decoration: none;
@@ -125,9 +126,6 @@
             color: white;
         }
     
-    
-        
-
     footer {
         font-size: 14px;
         text-transform: uppercase;
